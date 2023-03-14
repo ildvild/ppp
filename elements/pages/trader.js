@@ -372,6 +372,46 @@ export const traderPageTemplate = html`
           </ppp-button>
         </ppp-generic-card>
         <ppp-generic-card>
+          <img
+            slot="logo"
+            draggable="false"
+            alt="Tradernet"
+            style="height: 40px"
+            src="${() => ppp.brandSvg('tradernet')}"
+          />
+          <div slot="title">Цифра брокер</div>
+          <span slot="description">Торговля и рыночные данные через брокерский профиль Цифра брокер.</span>
+          <div slot="description" class="caps-list">
+            <ul>
+              <li>
+                ${() =>
+                  ppp.t(`$const.traderCaps.${TRADER_CAPS.CAPS_LIMIT_ORDERS}`)}
+              </li>
+              <li>
+                ${() =>
+                  ppp.t(`$const.traderCaps.${TRADER_CAPS.CAPS_MARKET_ORDERS}`)}
+              </li>
+              <li>
+                ${() =>
+                  ppp.t(`$const.traderCaps.${TRADER_CAPS.CAPS_STOP_ORDERS}`)}
+              </li>
+              <li>
+                ${() =>
+                  ppp.t(`$const.traderCaps.${TRADER_CAPS.CAPS_ACTIVE_ORDERS}`)}
+              </li>
+            </ul>
+          </div>
+          <ppp-button
+            slot="action"
+            @click="${() =>
+              ppp.app.navigate({
+                page: `trader-${TRADERS.TRADERNET_V2}`
+              })}"
+          >
+            Продолжить
+          </ppp-button>
+        </ppp-generic-card>
+        <ppp-generic-card>
           <div class="picture" slot="logo">${html.partial(cloudFunctions)}</div>
           <div slot="title">По ссылке</div>
           <span slot="description">

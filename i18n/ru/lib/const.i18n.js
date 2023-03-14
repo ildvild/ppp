@@ -38,7 +38,8 @@ export default function (i18n) {
         [BROKERS.PSINA]: 'Psina',
         [BROKERS.BINANCE]: 'Binance',
         [BROKERS.HUOBI]: 'Huobi',
-        [BROKERS.BYBIT]: 'Bybit'
+        [BROKERS.BYBIT]: 'Bybit',
+        [BROKERS.TRADERNET]: 'Цифра'
       },
       columnSource: {
         [COLUMN_SOURCE.INSTRUMENT]: 'Инструмент',
@@ -69,6 +70,7 @@ export default function (i18n) {
         [TRADERS.UTEX_MARGIN_STOCKS]: 'UTEX Margin (акции)',
         [TRADERS.FINAM_TRADE_API]: 'Finam Trade API',
         [TRADERS.IB]: 'Interactive Brokers',
+        [TRADERS.TRADERNET_V2]: 'Tradernet API V2',
         [TRADERS.CUSTOM]: 'По ссылке'
       },
       traderCaps: {

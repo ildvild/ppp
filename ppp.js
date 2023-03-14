@@ -479,6 +479,7 @@ class PPP {
           [TRADERS.UTEX_MARGIN_STOCKS]: `${this.rootUrl}/traders/utex-margin-stocks.js`,
           [TRADERS.FINAM_TRADE_API]: `${this.rootUrl}/traders/finam-trade-api.js`,
           [TRADERS.IB]: `${this.rootUrl}/traders/ib.js`,
+          [TRADERS.TRADERNET_V2]: `${this.rootUrl}/traders/tradernet-v2.js`,
           [TRADERS.PSINA_ALOR_OPENAPI_V2]: document.url,
           [TRADERS.CUSTOM]: document.url
         }[document.type]

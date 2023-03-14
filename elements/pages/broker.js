@@ -32,12 +32,12 @@ export const brokerPageTemplate = html`
           <span slot="title">Alor</span>
           <span slot="description">
             Торговля и рыночные данные через Alor Open API.&nbsp;<a
-              class="link"
-              target="_blank"
-              rel="noopener"
-              href="https://alor.dev/docs"
-              >Перейти к документации</a
-            >.
+            class="link"
+            target="_blank"
+            rel="noopener"
+            href="https://alor.dev/docs"
+          >Перейти к документации</a
+          >.
           </span>
           <ppp-button
             slot="action"
@@ -60,12 +60,12 @@ export const brokerPageTemplate = html`
           <span slot="title">Tinkoff</span>
           <span slot="description">
             Торговля и рыночные данные через Tinkoff Invest API.&nbsp;<a
-              class="link"
-              target="_blank"
-              rel="noopener"
-              href="https://tinkoff.github.io/investAPI"
-              >Перейти к документации</a
-            >.
+            class="link"
+            target="_blank"
+            rel="noopener"
+            href="https://tinkoff.github.io/investAPI"
+          >Перейти к документации</a
+          >.
           </span>
           <ppp-button
             slot="action"
@@ -116,12 +116,12 @@ export const brokerPageTemplate = html`
           <span slot="title">UTEX</span>
           <span slot="description">
             Торговля и рыночные данные через сервисы UTEX.&nbsp;<a
-              class="link"
-              target="_blank"
-              rel="noopener"
-              href="https://utex.io"
-              >Официальный ресурс</a
-            >.
+            class="link"
+            target="_blank"
+            rel="noopener"
+            href="https://utex.io"
+          >Официальный ресурс</a
+          >.
           </span>
           <ppp-button
             slot="action"
@@ -185,12 +185,12 @@ export const brokerPageTemplate = html`
           <span slot="description">
             Торговля и рыночные данные через криптовалютную биржу
             Binance.&nbsp;<a
-              class="link"
-              target="_blank"
-              rel="noopener"
-              href="https://www.binance.com/"
-              >Официальный ресурс</a
-            >.
+            class="link"
+            target="_blank"
+            rel="noopener"
+            href="https://www.binance.com/"
+          >Официальный ресурс</a
+          >.
           </span>
           <ppp-button
             slot="action"
@@ -213,12 +213,12 @@ export const brokerPageTemplate = html`
           <span slot="title">Huobi</span>
           <span slot="description">
             Торговля и рыночные данные через криптовалютную биржу Huobi.&nbsp;<a
-              class="link"
-              target="_blank"
-              rel="noopener"
-              href="https://www.huobi.com/"
-              >Официальный ресурс</a
-            >.
+            class="link"
+            target="_blank"
+            rel="noopener"
+            href="https://www.huobi.com/"
+          >Официальный ресурс</a
+          >.
           </span>
           <ppp-button
             disabled
@@ -242,12 +242,12 @@ export const brokerPageTemplate = html`
           <span slot="title">Bybit</span>
           <span slot="description">
             Торговля и рыночные данные через криптовалютную биржу Bybit.&nbsp;<a
-              class="link"
-              target="_blank"
-              rel="noopener"
-              href="https://www.bybit.com/"
-              >Официальный ресурс</a
-            >.
+            class="link"
+            target="_blank"
+            rel="noopener"
+            href="https://www.bybit.com/"
+          >Официальный ресурс</a
+          >.
           </span>
           <ppp-button
             disabled
@@ -255,6 +255,33 @@ export const brokerPageTemplate = html`
             @click="${() =>
               ppp.app.navigate({
                 page: `broker-${BROKERS.BYBIT}`
+              })}"
+          >
+            Продолжить
+          </ppp-button>
+        </ppp-generic-card>
+        <ppp-generic-card>
+          <img
+            slot="logo"
+            draggable="false"
+            alt="Tradernet"
+            style="height: 40px"
+            src="${() => ppp.brandSvg('tradernet')}"
+          />
+          <span slot="title">Цифра брокер</span>
+          <span slot="description">Торговля и рыночные данные через Tradernet API V2. <a
+            class="link"
+            target="_blank"
+            rel="noopener"
+            href="https://tradernet.ru/tradernet-api"
+          >Перейти к документации</a
+          >.
+          </span>
+          <ppp-button
+            slot="action"
+            @click="${() =>
+              ppp.app.navigate({
+                page: `broker-${BROKERS.TRADERNET}`
               })}"
           >
             Продолжить
